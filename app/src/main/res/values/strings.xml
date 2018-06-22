@@ -3,21 +3,35 @@
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_log_in">Login</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
+    <string name="prompt_password">Şifre</string>
+    <string name="action_log_in">Giriş</string>
+    <string name="error_invalid_email">Hatalı e-mail adresi</string>
+    <string name="error_invalid_password">Şifre daha uzun olmalı!</string>
+    <string name="error_incorrect_password">Yanlış Şifre!</string>
+    <string name="error_field_required">Bu alan doldurulmalıdır!</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="register">Kaydol</string>
+
 
     <string name="neworder">+</string>
     <string name="ordercard">Sipariş Kartı</string>
     <string name="ordercardhint">Siparişlerinizi Buraya Yazın</string>
     <string name="price">Fiyat (TL) :</string>
+    <string name="ordercancel">Vazgeç</string>
+    <string name="orderaccept">Onayla</string>
+    <string name="dummy_name">Dummy Name</string>
+    <string name="dummy_tl">15 TL</string>
+
+
+
+
+
+
+
+
 
     <string-array name="numbers">
         <item>1</item>
@@ -40,8 +54,87 @@
         <item>18</item>
         <item>19</item>
         <item>20</item>
-    </string-array>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+        <item>81</item>
+        <item>82</item>
+        <item>83</item>
+        <item>84</item>
+        <item>85</item>
+        <item>86</item>
+        <item>87</item>
+        <item>88</item>
+        <item>89</item>
+        <item>90</item>
+        <item>91</item>
+        <item>92</item>
+        <item>93</item>
+        <item>94</item>
+        <item>95</item>
+        <item>96</item>
+        <item>97</item>
+        <item>98</item>
+        <item>99</item>
 
-    <string name="ordercancel">Vazgeç</string>
-    <string name="orderaccept">Onayla</string>
+
+
+    </string-array>
 </resources>

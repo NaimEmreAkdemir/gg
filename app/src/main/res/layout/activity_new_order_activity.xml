@@ -77,6 +77,7 @@
         android:entries="@array/numbers"
         android:gravity="bottom"
         android:textSize="16sp"
+        android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
 

@@ -66,34 +66,54 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <Button
-                android:id="@+id/email_sign_in_button"
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/action_log_in"
-                android:textAllCaps="false"
-                android:textColorLink="@android:color/black"
-                android:textStyle="bold" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textColorLink="@android:color/black"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/email_sign_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/action_log_in"
+                    android:textAllCaps="false"
+                    android:textColorLink="@android:color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
 
-
-            <!-- Silinecek -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+
+                <!-- Silinecek -->
+
                 <Button
                     android:id="@+id/backdoor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Backdoor"/>
+                    android:text="Backdoor" />
 
-
+                <!-- Silinecek -->
             </LinearLayout>
-
-            <!-- Silinecek -->
-
 
 
         </LinearLayout>
