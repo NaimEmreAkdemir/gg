@@ -1,13 +1,22 @@
-package com.example.emre.gg;
+package com.example.emre.gg.Adapters;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.emre.gg.Activities.selected_order_activity;
+import com.example.emre.gg.Entities.Orders;
+import com.example.emre.gg.R;
+
 import java.util.ArrayList;
+
+import static android.support.v4.content.ContextCompat.startActivity;
 
 /**
  * Created by tchzafer on 21/03/2018.
@@ -17,10 +26,13 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.MyViewHold
 
     ArrayList<Orders> mOrdersList;
     LayoutInflater inflater;
+    private Context mContext;
+
 
     public OrdersAdapter(Context context, ArrayList<Orders> orders) {
         inflater = LayoutInflater.from(context);
         this.mOrdersList = orders;
+        mContext = context;
     }
 
 
@@ -45,7 +57,7 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.MyViewHold
 
 
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-
+        LinearLayout order_card;
         TextView nickname, order_description,order_price;;
         ImageView image;
         public MyViewHolder(View itemView) {
@@ -54,8 +66,8 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.MyViewHold
             order_description = (TextView) itemView.findViewById(R.id.order_description);
             image = (ImageView) itemView.findViewById(R.id.image);
             order_price = (TextView) itemView.findViewById(R.id.order_price);
-            order_price.setOnClickListener(this);  //gereksiz
-
+            order_card = (LinearLayout) itemView.findViewById(R.id.order_card);
+            order_card.setOnClickListener(this);
         }
 
         public void setData(Orders selectedOrders, int position) {
@@ -70,8 +82,9 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.MyViewHold
 
         @Override
         public void onClick(View v) {
-
-
+            Log.d("Tıklanma","x");
+            Intent i = new Intent(mContext,selected_order_activity.class);
+            mContext.startActivity(i);
         }
 
 

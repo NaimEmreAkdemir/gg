@@ -13,20 +13,20 @@
 
 
     <LinearLayout
+        android:id="@+id/order_card"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:background="#5ec1e372">
+        tools:background="#15000000">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#5ec1e372">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:background="#5ec1e372"
+                android:background="#15000000"
                 android:src="@drawable/rounded_profile" />
 
             <LinearLayout

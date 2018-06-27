@@ -24,8 +24,10 @@
     <string name="orderaccept">Onayla</string>
     <string name="dummy_name">Dummy Name</string>
     <string name="dummy_tl">15 TL</string>
-
-
+    <string name="order_alert_dialog">TL\'ye Teklif Vermek İstediğinize Emin Misiniz?</string>
+    <string name="yes">Evet,eminim</string>
+    <string name="no">Hayır,iptal et</string>
+    <string name="selected_order">Siparişi</string>
 
 
 

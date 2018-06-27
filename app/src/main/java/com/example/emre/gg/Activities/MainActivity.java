@@ -1,22 +1,28 @@
-package com.example.emre.gg;
+package com.example.emre.gg.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.emre.gg.Entities.Orders;
+import com.example.emre.gg.Adapters.OrdersAdapter;
+import com.example.emre.gg.R;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
-    private TextView neworder;
+    private ImageView neworder;
     RecyclerView recyclerView;
 
 
@@ -34,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     return true;
+
                 case R.id.navigation_dashboard:
                    // mTextMessage.setText(R.string.title_dashboard);
                     neworder.setVisibility(View.INVISIBLE);
@@ -63,8 +70,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
 
         mTextMessage = (TextView) findViewById(R.id.message);
-        neworder = (TextView) findViewById(R.id.neworder);
-        neworder.setText(R.string.neworder);
+        neworder = (ImageView) findViewById(R.id.neworder);
         neworder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,6 +80,10 @@ public class MainActivity extends AppCompatActivity {
         });
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
     }
 
     @Override

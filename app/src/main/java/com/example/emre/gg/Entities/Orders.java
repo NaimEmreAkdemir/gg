@@ -1,4 +1,6 @@
-package com.example.emre.gg;
+package com.example.emre.gg.Entities;
+
+import com.example.emre.gg.R;
 
 import java.util.ArrayList;
 
